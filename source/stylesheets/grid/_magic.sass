@@ -1,0 +1,38 @@
+//
+// Magic (Responsive) Susy Grid System
+//
+
+$show-grid-backgrounds: true
+
+@import "susy"
+
+// For full Susy documentation, visit: http://susy.oddbird.net/tutorial/
+
+// Define mobile-first grid constants.
+$total-columns      : 14
+// You can use ems, px or % to define the grid.
+$column-width       : 4.3em
+$gutter-width       : 0em
+$grid-padding       : $gutter-width
+
+// Define breakpoints, in this case when there's room for the specified columns.
+$break-tablet:   8
+$break-desktop: 12
+$break-huge:    16
+
+.container
+  // Include `container` if this element will contain a grid system.
+  +container
+
+  // Apply our grid background stripes for development.
+  // +susy-grid-background
+
+header, #main-content, footer
+  // Clearfix for full-width elements
+  +clearfix
+
+  .content 
+    +span-columns(14 ,14)
+
+
+

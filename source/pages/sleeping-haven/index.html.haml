@@ -1,0 +1,42 @@
+// SITE CONFIG
+
+- @Subtitle = "Sleeping Haven"
+- @title = "Eastern Visayas" + ' - ' + @Subtitle # Permanent
+- @bodyclass = "page"
+- @title_color = "#195372"
+
+// CONTENT SETTINGS
+
+- @transition = "data-transition"
+- @effect = "sliceDown"
+
+- @slides = [ '../../images/wtg/slide/1.jpg',
+			  '../../images/wtg/slide/2.jpg',
+			  '../../images/wtg/slide/3.jpg',
+			  '../../images/wtg/slide/1.jpg',
+			  '../../images/wtg/slide/2.jpg',
+			  '../../images/wtg/slide/3.jpg',
+			  '../../images/wtg/slide/1.jpg',
+			  '../../images/wtg/slide/2.jpg', ]
+
+- @slide_titles = ['Dive Leyte','Sohoton Caves','Zip Southern Leyte']
+
+- @destination = ["Biliran","Eastern Samar","Leyte","Northern Samar","Samar","Southern Leyte","Tacloban"]
+
+      
+
+// PAGE RENDER
+
+.content
+	#slider.nivoSlider
+		- @slides.each_with_index do |slide, z|
+			%img{:src => slide, :alt => @slide_titles[z], :title => @slide_titles[z]}
+	.header_title 
+		%h1.hr= @Subtitle
+	
+	#select_menu
+		- @destination.each_with_index do |destination, z|
+			.dest_container
+				.dest
+					%h2= @destination[z]
+					%img{:class => "dest_img", :src => @slides[z]}

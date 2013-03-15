@@ -1,0 +1,66 @@
+// TYPOGRAPHY FILES  //
+
+@font-face {
+  font-family: 'Harabara';
+  src: url("fonts/Harabara.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: 'SinaNova-RegularRegular';
+    src: url('fonts/sinanova_regular_macroman/SinaNovaReg-webfont.eot');
+    src: url('fonts/sinanova_regular_macroman/SinaNovaReg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sinanova_regular_macroman/SinaNovaReg-webfont.woff') format('woff'),
+         url('fonts/sinanova_regular_macroman/SinaNovaReg-webfont.ttf') format('truetype'),
+         url('fonts/sinanova_regular_macroman/SinaNovaReg-webfont.svg#SinaNova-RegularRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("fonts/fontello.eot?78874117");
+  src: url("fonts/fontello.eot?78874117#iefix") format('embedded-opentype'), url("fonts/fontello.woff?78874117") format('woff'), url("fonts/fontello.ttf?78874117") format('truetype'), url("fonts/fontello.svg?78874117#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('fonts/fontello.svg?78874117#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+/* opacity .8 */
+/* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+/* Animation center compensation - magrins should be symmetric */
+/* remove if not needed */
+  margin-left: 0.2em;
+/* you can be more comfortable with increased icons size */
+/* font-size: 120%; */
+/* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-plus-circled:before { content: '\2795'; } /* '➕' */
+.icon-left-fat:before { content: '\21c7'; } /* '⇇' */
+.icon-right-fat:before { content: '\21c9'; } /* '⇉' */
+.icon-plus-circle:before { content: '\2795'; } /* '➕' */
+.icon-circle-empty:before { content: '\f10c'; } /* '' */
+.icon-circle:before { content: '\f111'; } /* '' */

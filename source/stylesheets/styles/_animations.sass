@@ -1,0 +1,532 @@
+//
+// *Animate.css - http://daneden.me/animate
+//  *LICENSED UNDER THE  MIT LICENSE (MIT)
+//  *
+//  *Copyright (c) 2012 Dan Eden
+//  *
+//  *Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+//  *
+//  *The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+//  *
+//  *THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+.animated
+  -webkit-animation-fill-mode: both
+  -moz-animation-fill-mode: both
+  -ms-animation-fill-mode: both
+  -o-animation-fill-mode: both
+  animation-fill-mode: both
+  -webkit-animation-duration: 1s
+  -moz-animation-duration: 1s
+  -ms-animation-duration: 1s
+  -o-animation-duration: 1s
+  animation-duration: 1s
+  &.hinge
+    -webkit-animation-duration: 2s
+    -moz-animation-duration: 2s
+    -ms-animation-duration: 2s
+    -o-animation-duration: 2s
+    animation-duration: 2s
+
+@-webkit-keyframes shake
+  0%, 100%
+    -webkit-transform: translateX(0)
+  10%, 30%, 50%, 70%, 90%
+    -webkit-transform: translateX(-10px)
+  20%, 40%, 60%, 80%
+    -webkit-transform: translateX(10px)
+
+
+@-moz-keyframes shake
+  0%, 100%
+    -moz-transform: translateX(0)
+  10%, 30%, 50%, 70%, 90%
+    -moz-transform: translateX(-10px)
+  20%, 40%, 60%, 80%
+    -moz-transform: translateX(10px)
+
+
+@-o-keyframes shake
+  0%, 100%
+    -o-transform: translateX(0)
+  10%, 30%, 50%, 70%, 90%
+    -o-transform: translateX(-10px)
+  20%, 40%, 60%, 80%
+    -o-transform: translateX(10px)
+
+
+@keyframes shake
+  0%, 100%
+    transform: translateX(0)
+  10%, 30%, 50%, 70%, 90%
+    transform: translateX(-10px)
+  20%, 40%, 60%, 80%
+    transform: translateX(10px)
+
+
+.shake
+  -webkit-animation-name: shake
+  -moz-animation-name: shake
+  -o-animation-name: shake
+  animation-name: shake
+
+@-webkit-keyframes bounce
+  0%, 20%, 50%, 80%, 100%
+    -webkit-transform: translateY(0)
+  40%
+    -webkit-transform: translateY(-30px)
+  60%
+    -webkit-transform: translateY(-15px)
+
+
+@-moz-keyframes bounce
+  0%, 20%, 50%, 80%, 100%
+    -moz-transform: translateY(0)
+  40%
+    -moz-transform: translateY(-30px)
+  60%
+    -moz-transform: translateY(-15px)
+
+
+@-o-keyframes bounce
+  0%, 20%, 50%, 80%, 100%
+    -o-transform: translateY(0)
+  40%
+    -o-transform: translateY(-30px)
+  60%
+    -o-transform: translateY(-15px)
+
+
+@keyframes bounce
+  0%, 20%, 50%, 80%, 100%
+    transform: translateY(0)
+  40%
+    transform: translateY(-30px)
+  60%
+    transform: translateY(-15px)
+
+
+.bounce
+  -webkit-animation-name: bounce
+  -moz-animation-name: bounce
+  -o-animation-name: bounce
+  animation-name: bounce
+
+@-webkit-keyframes fadeInDown
+  0%
+    opacity: 0
+    -webkit-transform: translateY(-20px)
+  100%
+    opacity: 1
+    -webkit-transform: translateY(0)
+
+
+@-moz-keyframes fadeInDown
+  0%
+    opacity: 0
+    -moz-transform: translateY(-20px)
+  100%
+    opacity: 1
+    -moz-transform: translateY(0)
+
+
+@-o-keyframes fadeInDown
+  0%
+    opacity: 0
+    -ms-transform: translateY(-20px)
+  100%
+    opacity: 1
+    -ms-transform: translateY(0)
+
+
+@keyframes fadeInDown
+  0%
+    opacity: 0
+    transform: translateY(-20px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+
+.fadeInDown
+  -webkit-animation: ease-in 1
+  -moz-animation: ease-in 1
+  -ms-animation: ease-in 1
+  -o-animation: ease-in 1
+  animation: ease-in 1
+  -webkit-animation-name: fadeInDown
+  -moz-animation-name: fadeInDown
+  -ms-animation-name: fadeInDown
+  -o-animation-name: fadeInDown
+  animation-name: fadeInDown
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  -ms-animation-fill-mode: forwards
+  -o-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: 0.5s
+  -moz-animation-duration: 0.5s
+  -ms-animation-duration: 0.5s
+  -o-animation-duration: 0.5s
+  animation-duration: 0.5s
+
+
+@-webkit-keyframes fadeInLeft
+  0%
+    opacity: 0
+    -webkit-transform: translateX(-20px)
+  100%
+    opacity: 1
+    -webkit-transform: translateX(0)
+
+
+@-moz-keyframes fadeInLeft
+  0%
+    opacity: 0
+    -moz-transform: translateX(-20px)
+  100%
+    opacity: 1
+    -moz-transform: translateX(0)
+
+
+@-o-keyframes fadeInLeft
+  0%
+    opacity: 0
+    -o-transform: translateX(-20px)
+  100%
+    opacity: 1
+    -o-transform: translateX(0)
+
+
+@keyframes fadeInLeft
+  0%
+    opacity: 0
+    transform: translateX(-20px)
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+.fadeInLeft
+  -webkit-animation: ease-in
+  -moz-animation: ease-in
+  -ms-animation: ease-in
+  -o-animation: ease-in
+  animation: ease-in
+  -webkit-animation-name: fadeInLeft
+  -moz-animation-name: fadeInLeft
+  -o-animation-name: fadeInLeft
+  animation-name: fadeInLeft
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  -ms-animation-fill-mode: forwards
+  -o-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: 0.5s
+  -moz-animation-duration: 0.5s
+  -ms-animation-duration: 0.5s
+  -o-animation-duration: 0.5s
+  animation-duration: 0.5s
+
+@-webkit-keyframes fadeOut
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+
+@-moz-keyframes fadeOut
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+
+@-o-keyframes fadeOut
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+
+@keyframes fadeOut
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+
+.fadeOut
+  -webkit-animation-name: fadeOut
+  -moz-animation-name: fadeOut
+  -o-animation-name: fadeOut
+  animation-name: fadeOut
+
+@-webkit-keyframes fadeOutDown
+  0%
+    opacity: 1
+    -webkit-transform: translateY(0)
+  100%
+    opacity: 0
+    -webkit-transform: translateY(20px)
+
+
+@-moz-keyframes fadeOutDown
+  0%
+    opacity: 1
+    -moz-transform: translateY(0)
+  100%
+    opacity: 0
+    -moz-transform: translateY(20px)
+
+
+@-o-keyframes fadeOutDown
+  0%
+    opacity: 1
+    -o-transform: translateY(0)
+  100%
+    opacity: 0
+    -o-transform: translateY(20px)
+
+
+@keyframes fadeOutDown
+  0%
+    opacity: 1
+    transform: translateY(0)
+  100%
+    opacity: 0
+    transform: translateY(20px)
+
+
+.fadeOutDown
+  -webkit-animation-name: fadeOutDown
+  -moz-animation-name: fadeOutDown
+  -o-animation-name: fadeOutDown
+  animation-name: fadeOutDown
+
+@-webkit-keyframes bounceIn
+  0%
+    opacity: 0
+    -webkit-transform: scale(0.3)
+  50%
+    opacity: 1
+    -webkit-transform: scale(1.05)
+  70%
+    -webkit-transform: scale(0.9)
+  100%
+    opacity: 1
+    -webkit-transform: scale(1)
+
+
+@-moz-keyframes bounceIn
+  0%
+    opacity: 0
+    -moz-transform: scale(0.3)
+  50%
+    opacity: 1
+    -moz-transform: scale(1.05)
+  70%
+    -moz-transform: scale(0.9)
+  100%
+    opacity: 1
+    -moz-transform: scale(1)
+
+
+@-o-keyframes bounceIn
+  0%
+    opacity: 0
+    -o-transform: scale(0.3)
+  50%
+    opacity: 1
+    -o-transform: scale(1.05)
+  70%
+    -o-transform: scale(0.9)
+  100%
+    opacity: 1
+    -o-transform: scale(1)
+
+
+@keyframes bounceIn
+  0%
+    opacity: 0
+    transform: scale(0.3)
+  50%
+    opacity: 1
+    transform: scale(1.05)
+  70%
+    transform: scale(0.9)
+  100%
+    opacity: 1
+    transform: scale(1)
+
+.bounceIn
+  opacity: 0
+  -webkit-animation: ease-out 1
+  -moz-animation: ease-out 1
+  -ms-animation: ease-out 1
+  -o-animation: ease-out 1
+  animation: ease-out 1
+  -webkit-animation-name: bounceIn
+  -moz-animation-name: bounceIn
+  -ms-animation-name: bounceIn
+  -o-animation-name: bounceIn
+  animation-name: bounceIn
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  -ms-animation-fill-mode: forwards
+  -o-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: 0.6s
+  -moz-animation-duration: 0.6s
+  -ms-animation-duration: 0.6s
+  -o-animation-duration: 0.6s
+  animation-duration: 0.6s
+
+.b1
+  -webkit-animation-delay: 0.2s
+  -moz-animation-delay: 0.2s
+  -ms-animation-delay: 0.2s
+  -o-animation-delay: 0.2s
+  animation-delay: 0.2s
+
+.b2
+  -webkit-animation-delay: 0.4s
+  -moz-animation-delay: 0.4s
+  -ms-animation-delay: 0.4s
+  -o-animation-delay: 0.4s
+  animation-delay: 0.4s
+
+.b3
+  -webkit-animation-delay: 0.6s
+  -moz-animation-delay: 0.6s
+  -ms-animation-delay: 0.6s
+  -o-animation-delay: 0.6s
+  animation-delay: 0.6s
+
+.b4
+  -webkit-animation-delay: 0.8s
+  -moz-animation-delay: 0.8s
+  -ms-animation-delay: 0.8s
+  -o-animation-delay: 0.8s
+  animation-delay: 0.8s
+
+.b5
+  -webkit-animation-delay: 1s
+  -moz-animation-delay: 1s
+  -ms-animation-delay: 1s
+  -o-animation-delay: 1s
+  animation-delay: 1s
+
+.b6
+  -webkit-animation-delay: 1.2s
+  -moz-animation-delay: 1.2s
+  -ms-animation-delay: 1.2s
+  -o-animation-delay: 1.2s
+  animation-delay: 1.2s
+
+.b7
+  -webkit-animation-delay: 1.4s
+  -moz-animation-delay: 1.4s
+  -ms-animation-delay: 1.4s
+  -o-animation-delay: 1.4s
+  animation-delay: 1.4s
+
+.b8
+  -webkit-animation-delay: 1.6s
+  -moz-animation-delay: 1.6s
+  -ms-animation-delay: 1.6s
+  -o-animation-delay: 1.6s
+  animation-delay: 1.6s
+
+.b9
+  -webkit-animation-delay: 1.8s
+  -moz-animation-delay: 1.8s
+  -ms-animation-delay: 1.8s
+  -o-animation-delay: 1.8s
+  animation-delay: 1.8s
+
+.description
+  -webkit-animation: ease-out 1
+  -moz-animation: ease-out 1
+  -ms-animation: ease-out 1
+  -o-animation: ease-out 1
+  animation: ease-out 1
+  -webkit-animation-name: fadeInDown
+  -moz-animation-name: fadeInDown
+  -ms-animation-name: fadeInDown
+  -o-animation-name: fadeInDown
+  animation-name: fadeInDown
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-fill-mode: forwards
+  -ms-animation-fill-mode: forwards
+  -o-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  -webkit-animation-duration: 0.5s
+  -moz-animation-duration: 0.5s
+  -ms-animation-duration: 0.5s
+  -o-animation-duration: 0.5s
+  animation-duration: 0.5s
+
+.loader
+  -webkit-animation: loader
+  -moz-animation: loader
+  -o-animation: loader
+  animation: loader
+  -webkit-animation-fill-mode: none
+  -moz-animation-fill-mode: none
+  -ms-animation-fill-mode: none
+  -o-animation-fill-mode: none
+  animation-fill-mode: none
+  -webkit-animation-duration: 1s
+  -moz-animation-duration: 1s
+  -ms-animation-duration: 1s
+  -o-animation-duration: 1s
+  animation-duration: 1s
+
+@-webkit-keyframes loader
+  0%
+    width: 0%
+    height: 0px
+    margin: 0 0
+  80%
+    width: 80%
+    height: 0px
+  100%
+    width: 95.5%
+    height: 1200px
+
+
+@-moz-keyframes loader
+  0%
+    width: 0%
+    height: 0px
+    margin: 0 0
+  80%
+    width: 80%
+    height: 0px
+  100%
+    width: 95.5%
+    height: 1200px
+
+@-o-keyframes loader
+  0%
+    width: 0%
+    height: 0px
+    margin: 0 0
+  80%
+    width: 80%
+    height: 0px
+  100%
+    width: 95.5%
+    height: 1200px
+
+@keyframes loader
+  0%
+    width: 0%
+    height: 0px
+    margin: 0 0
+  80%
+    width: 80%
+    height: 0px
+  100%
+    width: 95.5%
+    height: 1200px

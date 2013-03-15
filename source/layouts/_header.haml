@@ -1,0 +1,13 @@
+#main-menu
+	.menu-container
+		.logo
+		.menu
+			%ul
+				%li{nav_active("index")}= link_to ('Home'), ('index.html')
+				%li{nav_active("page")}= link_to ('Fast Facts'), ('pages/page.html')
+				%li{nav_active("page")}= link_to ('Getting There'), ('pages/page.html')
+				%li{nav_active("page")}= link_to ('Business'), ('/pages/page.html')
+				%li{nav_active("page")}= link_to ('News'), ('/pages/page.html')
+				%li{nav_active("page")}= link_to ('Events'), ('/pages/page.html')
+				%li{nav_active("page")}= link_to ('Links'), ('/pages/page.html')
+				%li{nav_active("page")}= link_to ('Contact '), ('/pages/page.html')
