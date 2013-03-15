@@ -1,3 +1,3 @@
-Eastern Visayas Web Project
+<b>Eastern Visayas Web Project
 
 *Site is Underconstruction*
