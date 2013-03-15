@@ -11,13 +11,13 @@
 - @effect = "sliceDown"
 
 - @slides = [ '../../images/wtg/slide/1.jpg',
-			  '../../images/wtg/slide/2.jpg',
-			  '../../images/wtg/slide/3.jpg',
-			  '../../images/wtg/slide/1.jpg',
-			  '../../images/wtg/slide/2.jpg',
-			  '../../images/wtg/slide/3.jpg',
-			  '../../images/wtg/slide/1.jpg',
-			  '../../images/wtg/slide/2.jpg', ]
+        '../../images/wtg/slide/2.jpg',
+        '../../images/wtg/slide/3.jpg',
+        '../../images/wtg/slide/1.jpg',
+        '../../images/wtg/slide/2.jpg',
+        '../../images/wtg/slide/3.jpg',
+        '../../images/wtg/slide/1.jpg',
+        '../../images/wtg/slide/2.jpg', ]
 
 - @slide_titles = ['Dive Leyte','Sohoton Caves','Zip Southern Leyte']
 
@@ -28,15 +28,15 @@
 // PAGE RENDER
 
 .content
-	#slider.nivoSlider
-		- @slides.each_with_index do |slide, z|
-			%img{:src => slide, :alt => @slide_titles[z], :title => @slide_titles[z]}
-	.header_title 
-		%h1.hr= @Subtitle
-	
-	#select_menu
-		- @destination.each_with_index do |destination, z|
-			.dest_container
-				.dest
-					%h2= @destination[z]
-					%img{:class => "dest_img", :src => @slides[z]}
+  #slider.nivoSlider
+    - @slides.each_with_index do |slide, z|
+      %img{:src => slide, :alt => @slide_titles[z], :title => @slide_titles[z]}
+  .header_title 
+    %h1.hr= @Subtitle
+  
+  #select_menu
+    - @destination.each_with_index do |destination, z|
+      .dest_container
+        .dest
+          %h2= @destination[z]
+          %img{:class => "dest_img", :src => @slides[z]}
